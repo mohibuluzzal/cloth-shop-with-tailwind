@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin Fashion</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
         .roboto{
@@ -24,22 +25,30 @@
 <body>
 
     <header class="bg-[#FFFBF0]">
-        <nav class="max-w-7xl m-auto flex items-center gap-9 justify-between pt-5 roboto">
-            <div class="max-w-xs">
+
+        <!-- nav section start
+            ================= -->
+        <nav class="p-2 lg:max-w-7xl m-auto flex items-center gap-9 justify-between pt-5 roboto">
+            <div class="w-full max-w-sm">
                  <img src="icons/logo.png" alt="">                            
             </div>
 
             <div>
-                <ul class="flex space-x-15 text-base font-medium text-[#3C3C3C]">
+                <ul class="hidden lg:flex space-x-15 text-base font-medium text-[#3C3C3C]">
                     <li><a href="">Home</a></li>
                     <li><a href="">Product</a></li>
                     <li><a href="">About Us</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
             </div>
+            <div class="lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </nav>
+        <!-- nav section end
+            ================= -->
 
-        <div class="max-w-7xl m-auto flex items-center justify-between">
+        <div class="max-w-7xl m-auto flex flex-col lg:flex-row mt-14 lg:mt-0 items-center justify-between">
             <div>
                 <h1><span class="bebas text-7xl text-[#FABE4C]">Be the Penguins</span>
                    <br> <span class="bebas text-7xl text-[#363958]">of Winter</span></h1>
